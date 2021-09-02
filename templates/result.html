@@ -1,0 +1,42 @@
+    {% block header %}
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://bootswatch.com/5/vapor/bootstrap.min.css">
+</head>
+<body>
+    
+    <h1>
+        <div>
+            <b>LA DISTANCIA ENTRE THE MOSCOW RING Y TU UBICACION ES :
+        </div>
+        <label for="">
+            <div>
+                <span> {{ distance }}  Kilometros </span>
+            </div>
+        </label>
+        </b>
+    </h1>
+    {% endblock %}
+    {% block content %}
+    
+    <h2>
+        <b> Datos de la ubicacion 
+            
+        PAIS: {{ pais1 }}  </b>
+    </h2>
+
+        
+
+        
+    <iframe src="http://localhost:4000/map" frameborder="0"  height="350" width="550" method="GET" >
+            
+    
+    </iframe>
+
+
+
+    {% endblock %}      
+    
+   
+   
+</body>
